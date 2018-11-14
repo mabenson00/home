@@ -1,0 +1,295 @@
+@import url(fonts/fonts.css);
+/* line 1, C:/home/app/assets/stylesheets/base.sass */
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #4c4f4d;
+  font-weight: 300;
+}
+/* line 5, C:/home/app/assets/stylesheets/base.sass */
+body p {
+  line-height: 123%;
+}
+/* line 7, C:/home/app/assets/stylesheets/base.sass */
+body a {
+  text-decoration: none;
+  color: #4c4f4d;
+}
+/* line 10, C:/home/app/assets/stylesheets/base.sass */
+body a.active {
+  color: #ff6c6c;
+}
+/* line 12, C:/home/app/assets/stylesheets/base.sass */
+body .pink {
+  color: #ff6c6c;
+}
+
+/* line 1, C:/home/app/assets/stylesheets/common.sass */
+body, html {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* line 6, C:/home/app/assets/stylesheets/common.sass */
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* line 12, C:/home/app/assets/stylesheets/common.sass */
+.container {
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 0 20%;
+}
+
+/* line 16, C:/home/app/assets/stylesheets/common.sass */
+.row {
+  max-width: 100%;
+}
+
+/* line 1, C:/home/app/assets/stylesheets/header.sass */
+.header {
+  text-align: center;
+  background-color: #F7F7F7;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+/* line 6, C:/home/app/assets/stylesheets/header.sass */
+.header .contact {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  padding: 5px 10px;
+  background-color: #ff6c6c;
+  z-index: 1000;
+  font-size: 14px;
+  font-weight: 600;
+  transition: background-color 100ms linear;
+}
+@media (min-width: 768px) {
+  /* line 6, C:/home/app/assets/stylesheets/header.sass */
+  .header .contact {
+    font-size: 16px;
+  }
+}
+/* line 18, C:/home/app/assets/stylesheets/header.sass */
+.header .contact a {
+  text-decoration: underline;
+  color: #fff;
+}
+/* line 21, C:/home/app/assets/stylesheets/header.sass */
+.header .contact.scrolled {
+  background-color: #163953;
+}
+/* line 24, C:/home/app/assets/stylesheets/header.sass */
+.header .parens {
+  color: #ff6c6c;
+  font-size: 35px;
+  position: relative;
+  top: 4px;
+}
+/* line 29, C:/home/app/assets/stylesheets/header.sass */
+.header .container {
+  max-width: 500px;
+}
+/* line 31, C:/home/app/assets/stylesheets/header.sass */
+.header .name {
+  font-size: 27px;
+}
+/* line 33, C:/home/app/assets/stylesheets/header.sass */
+.header .description {
+  font-size: 19px;
+  margin-top: 10px;
+  padding-bottom: 35px;
+}
+/* line 37, C:/home/app/assets/stylesheets/header.sass */
+.header .menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 300px;
+  margin: 0 auto;
+}
+/* line 43, C:/home/app/assets/stylesheets/header.sass */
+.header .menu a {
+  font-weight: 400;
+}
+
+/* line 1, C:/home/app/assets/stylesheets/home.sass */
+.home {
+  background-color: #ff6c6c;
+  color: #fff;
+}
+/* line 4, C:/home/app/assets/stylesheets/home.sass */
+.home .container {
+  padding: 40px 20%;
+}
+/* line 6, C:/home/app/assets/stylesheets/home.sass */
+.home .logo {
+  position: relative;
+  width: 100px;
+  left: 0px;
+  top: 10px;
+}
+@media (min-width: 768px) {
+  /* line 6, C:/home/app/assets/stylesheets/home.sass */
+  .home .logo {
+    left: 50px;
+    top: 20px;
+  }
+}
+/* line 14, C:/home/app/assets/stylesheets/home.sass */
+.home .logo img {
+  width: 90px;
+}
+/* line 16, C:/home/app/assets/stylesheets/home.sass */
+.home .text {
+  max-width: 945px;
+  font-size: 24px;
+}
+@media (min-width: 768px) {
+  /* line 16, C:/home/app/assets/stylesheets/home.sass */
+  .home .text {
+    font-size: 30px;
+  }
+}
+/* line 21, C:/home/app/assets/stylesheets/home.sass */
+.home .specialties-container {
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  margin-bottom: 80px;
+}
+@media (min-width: 768px) {
+  /* line 21, C:/home/app/assets/stylesheets/home.sass */
+  .home .specialties-container {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 80px;
+  }
+}
+/* line 31, C:/home/app/assets/stylesheets/home.sass */
+.home .specialties-container .specialty {
+  padding: 20px 10px;
+  flex-grow: 1;
+}
+@media (min-width: 768px) {
+  /* line 31, C:/home/app/assets/stylesheets/home.sass */
+  .home .specialties-container .specialty {
+    flex-basis: 33%;
+  }
+}
+/* line 37, C:/home/app/assets/stylesheets/home.sass */
+.home .specialties-container .specialty .title {
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+/* line 1, C:/home/app/assets/stylesheets/small.sass */
+.small {
+  background-color: #163953;
+  color: #fff;
+}
+/* line 4, C:/home/app/assets/stylesheets/small.sass */
+.small .container {
+  padding: 40px 20% 120px 20%;
+}
+/* line 6, C:/home/app/assets/stylesheets/small.sass */
+.small .logo {
+  position: relative;
+  width: 900px;
+  left: 75%;
+  top: 10px;
+}
+@media (min-width: 768px) {
+  /* line 6, C:/home/app/assets/stylesheets/small.sass */
+  .small .logo {
+    left: 90%;
+    top: 20px;
+  }
+}
+/* line 14, C:/home/app/assets/stylesheets/small.sass */
+.small .logo img {
+  width: 90px;
+}
+/* line 16, C:/home/app/assets/stylesheets/small.sass */
+.small .small-header {
+  font-size: 30px;
+  margin-bottom: 40px;
+}
+/* line 19, C:/home/app/assets/stylesheets/small.sass */
+.small .small-header a {
+  text-decoration: underline;
+  color: #fff;
+}
+/* line 22, C:/home/app/assets/stylesheets/small.sass */
+.small .text {
+  max-width: 945px;
+  font-size: 18px;
+}
+@media (min-width: 768px) {
+  /* line 22, C:/home/app/assets/stylesheets/small.sass */
+  .small .text {
+    font-size: 18px;
+  }
+}
+/* line 27, C:/home/app/assets/stylesheets/small.sass */
+.small .text .legal {
+  font-size: 14px;
+  margin-top: 60px;
+}
+
+/* line 1, C:/home/app/assets/stylesheets/footer.sass */
+.footer {
+  text-align: center;
+  background-color: #F7F7F7;
+  padding-top: 140px;
+  padding-bottom: 280px;
+}
+/* line 6, C:/home/app/assets/stylesheets/footer.sass */
+.footer a {
+  text-decoration: underline;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  color: #ff6c6c;
+}
+@media (min-width: 768px) {
+  /* line 6, C:/home/app/assets/stylesheets/footer.sass */
+  .footer a {
+    color: #4c4f4d;
+  }
+}
+/* line 14, C:/home/app/assets/stylesheets/footer.sass */
+.footer .parens {
+  color: #ff6c6c;
+  font-size: 45px;
+  position: relative;
+  top: 4px;
+  display: none;
+}
+@media (min-width: 768px) {
+  /* line 14, C:/home/app/assets/stylesheets/footer.sass */
+  .footer .parens {
+    display: inline;
+  }
+}
+/* line 22, C:/home/app/assets/stylesheets/footer.sass */
+.footer .container {
+  max-width: 500px;
+}
+/* line 24, C:/home/app/assets/stylesheets/footer.sass */
+.footer .name {
+  font-size: 35px;
+  font-weight: 600;
+}
+/* line 27, C:/home/app/assets/stylesheets/footer.sass */
+.footer .description {
+  font-size: 24px;
+  margin-top: 10px;
+  padding-bottom: 35px;
+}
