@@ -1,0 +1,30 @@
+.footer
+  text-align: center
+  background-color: #F7F7F7
+  padding-top: 140px
+  padding-bottom: 280px
+  a
+    text-decoration: underline
+    overflow-wrap: break-word
+    word-wrap: break-word
+    color: $home-pink
+    @include breakpoint(medium)
+      color: $home-text
+
+  .parens
+    color: $home-pink
+    font-size: 45px
+    position: relative
+    top: 4px
+    display: none
+    @include breakpoint(medium)
+      display: inline
+  .container
+    max-width: 500px
+  .name
+    font-size: 35px
+    font-weight: 600
+  .description
+    font-size: 24px
+    margin-top: 10px
+    padding-bottom: 35px

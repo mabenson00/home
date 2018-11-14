@@ -1,5 +1,5 @@
 .home
-  background-color: $primary
+  background-color: $home-pink
   color: #fff
   .container
     padding: 40px 20%
@@ -19,7 +19,7 @@
     @include breakpoint(medium)
       font-size: 30px
   .specialties-container
-    padding-top: 80px
+    padding-top: 40px
     display: flex
     flex-direction: column
     font-size: 14px
@@ -27,8 +27,13 @@
     @include breakpoint(medium)
       flex-direction: row
       justify-content: space-between
+      padding-top: 80px
     .specialty
-      padding: 0px 10px
+      padding: 20px 10px
+      flex-grow: 1
+      @include breakpoint(medium)
+        flex-basis: 33%
+
       .title
         text-transform: uppercase
         margin-bottom: 20px

@@ -3,8 +3,26 @@
   background-color: #F7F7F7
   padding-top: 40px
   padding-bottom: 40px
+  .contact
+    position: fixed
+    top: 0px
+    right: 0px
+    padding: 5px 10px
+    background-color: $home-pink
+    z-index: 1000
+    font-size: 14px
+    font-weight: 600
+    transition: background-color 100ms linear
+    @include breakpoint (medium)
+      font-size: 16px
+    a
+      text-decoration: underline
+      color: #fff
+  .contact.scrolled
+    background-color: $home-blue
+
   .parens
-    color: $primary
+    color: $home-pink
     font-size: 35px
     position: relative
     top: 4px
