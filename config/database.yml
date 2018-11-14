@@ -1,0 +1,21 @@
+default: &default
+  adapter: postgresql
+
+development:
+  <<: *default
+  database: home_development
+  username: postgres
+  password: password
+
+test: &test
+  <<: *default
+  database: home_test
+  username: postgres
+  password: password
+
+production:
+  <<: *default
+  database: home
+
+cucumber:
+  <<: *test
