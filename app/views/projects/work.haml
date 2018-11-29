@@ -6,6 +6,60 @@
   <meta property="og:image" content="https://www.viahero.com/assets/index/splash-wide-10c9c9dad002e1c84ef6166c9e24c5ca5d221b9930cc6069b26ba162f2d35c57.jpg"/>
 .work.row
   .container
-    .item
-      .screen
-        =image_tag("home.png")
+    .site
+
+      .item
+        .item-class
+          .title
+            Front-End
+          .box.active
+          .box
+        .screen
+          =image_tag("work/home-min.png")
+      .site-header
+        ViaHero
+      .site-text
+        ViaHero wanted to improve their design, UI, and create an entire analytics and CRM system from scratch. As their first long-term developer, I was responsible for the usability, code, and design.
+      .item
+        .item-class
+          .title.full
+            Full-Stack
+          .box.active
+          .box.active
+        .screen
+          = video_tag("work/preferences.mp4", :controls => false, :autobuffer => true, :autoplay => true, :loop => true, :muted => true)
+      .item
+        .item-class
+          .title
+            Front-End
+          .box.active
+          .box
+        .screen
+          =image_tag("work/pricing-2.PNG")
+      .item
+        .item-class
+          .title
+            Front-End
+          .box.active
+          .box
+        .screen
+          = video_tag("work/experiences.mp4", :controls => false, :autobuffer => true, :autoplay => true, :loop => true, :muted => true)
+
+      .item
+        .item-class
+          .title.back
+            Back-End
+          .box
+          .box.active
+        .screen
+          = video_tag("work/edit.mp4", :controls => false, :autobuffer => true, :autoplay => true, :loop => true, :muted => true)
+      .item
+        .item-class
+          .title.back
+            Back-End
+          .box
+          .box.active
+        .screen.hoverbox
+          =image_tag "work/kpis-min.png", class: 'hoverbox-layer-bottom'
+          .hoverbox-layer-top
+            .hoverbox-text I can't show much of the back-end because it's private, but email for more!

@@ -1,33 +1,13 @@
 .header.row
   .contact
-    <a  href="#bottom">Contact</a>
-  .container
+    <a href="#bottom">Contact</a>
+  .container#header-container
     .title
       .name Hi, I'm Michael.
       .description!= "<span class='parens'>(</span> Freelance web and full-stack developer <span class='parens'>)</span>"
       %hr
     %ul.menu
-      .li
+      %li
         %a{href: "/"} Home
-      .li
+      %li
         %a{href: "/work"} Work
-      .li
-        %a{href: "/about"} About
-
-:javascript
-
-  $(function () {
-    $(document).scroll(function () {
-      var $nav = $(".contact");
-      var $home = $(".home")
-      var $small = $(".small")
-      var home_position = $home.position()
-      var small_position = $small.position()
-      if ($(this).scrollTop() > small_position.top || $(this).scrollTop() < home_position.top) {
-        $nav.removeClass('scrolled');;
-      }
-      else if ($(this).scrollTop() > home_position.top) {
-        $nav.addClass('scrolled');
-      }
-    });
-  });

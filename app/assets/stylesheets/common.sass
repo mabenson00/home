@@ -3,15 +3,62 @@ body, html
   padding: 0px
   width: 100%
   overflow-x: hidden
+
+
 html
   font-family: sans-serif
   -ms-text-size-adjust: 100%
   -webkit-text-size-adjust: 100%
 
-
+img
+  max-width: 100%
+video
+  max-width: 100%
 .container
   max-width: 940px
   margin: 0 auto
   padding: 0 20%
 .row
   max-width: 100%
+.hoverbox
+  box-sizing: border-box
+  position: relative
+  display: inline-block
+  overflow: hidden
+  max-width: 100%
+  height: auto
+  margin: 5px 5px
+  font-family: 'Lato', sans-serif
+.hoverbox-layer-bottom
+  display: block
+.hoverbox-layer-top
+  opacity: 0
+  font-family: 'Lato', sans-serif
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  width: 100%
+  height: 100%
+  background: rgba(0, 0, 0, 0.6)
+  color: #fff
+  padding: 15px
+  -moz-transition: all 1.2s ease-in-out 0s
+  -webkit-transition: all 1.2s ease-in-out 0s
+  -ms-transition: all 1.2s ease-in-out 0s
+  transition: all 1.2s ease-in-out 0s
+  &:hover, .hoverbox-layer-top, &.active .hoverbox-layer-top
+    opacity: 1
+.hoverbox-text
+  font-family: 'Lato', sans-serif
+  text-align: center
+  font-size: 14px
+  display: inline-block
+  position: absolute
+  top: 50%
+  left: 50%
+  -moz-transform: translate(-50%, -50%)
+  -webkit-transform: translate(-50%, -50%)
+  -ms-transform: translate(-50%, -50%)
+  transform: translate(-50%, -50%)

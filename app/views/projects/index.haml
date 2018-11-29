@@ -7,3 +7,21 @@
 
 =render partial: "projects/partials/home"
 =render partial: "projects/partials/small"
+
+:javascript
+
+  $(function () {
+    $(document).scroll(function () {
+      var $nav = $(".contact");
+      var $home = $(".home")
+      var $small = $(".small")
+      var home_position = $home.position()
+      var small_position = $small.position()
+      if ($(this).scrollTop() > small_position.top || $(this).scrollTop() < home_position.top) {
+        $nav.removeClass('scrolled');;
+      }
+      else if ($(this).scrollTop() > home_position.top) {
+        $nav.addClass('scrolled');
+      }
+    });
+  });
