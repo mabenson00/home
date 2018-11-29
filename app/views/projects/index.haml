@@ -1,10 +1,27 @@
 - content_for :title do
   Michael Benson | Freelance Developer NYC
 - content_for :description do
-  ViaHero connects travelers with local trip planners for custom itineraries to Cuba, Colombia, and Japan.
+  Examples of front-end, back-end and full-stack work: my portfolio
 - content_for :header do
   <meta property="og:image" content="https://www.viahero.com/assets/index/splash-wide-10c9c9dad002e1c84ef6166c9e24c5ca5d221b9930cc6069b26ba162f2d35c57.jpg"/>
-=render partial: "projects/partials/header"
+
 =render partial: "projects/partials/home"
 =render partial: "projects/partials/small"
-=render partial: "projects/partials/footer"
+
+:javascript
+
+  $(function () {
+    $(document).scroll(function () {
+      var $nav = $(".contact");
+      var $home = $(".home")
+      var $small = $(".small")
+      var home_position = $home.position()
+      var small_position = $small.position()
+      if ($(this).scrollTop() > small_position.top || $(this).scrollTop() < home_position.top) {
+        $nav.removeClass('scrolled');;
+      }
+      else if ($(this).scrollTop() > home_position.top) {
+        $nav.addClass('scrolled');
+      }
+    });
+  });
