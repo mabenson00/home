@@ -16,7 +16,7 @@ test: &test
 production:
   <<: *default
   database: home
-  host: /var/run/postgresql
+  
 
 cucumber:
   <<: *test
