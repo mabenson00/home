@@ -2,7 +2,8 @@
   %head
     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
     %title
-      = content_for?(:title) ? "#{content_for(:title)}" : 'Michael Benson | Freelance Developer NYC'
+      = content_for?(:title) ? "#{content_for(:title)}" : 'Michael Benson | Freelance Developer For  NYC'
+      = content_for?(:description) ? "#{content_for(:description)}" : 'Front-End and Full-Stack Web Developer. Expert in Ruby on Rails, React, Wordpress, HTML and CSS.'
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
     <meta name="viewport" content="width=device-width, initial-scale=1">
