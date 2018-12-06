@@ -13,6 +13,7 @@
     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
     %title
       = content_for?(:title) ? "#{content_for(:title)}" : 'Michael Benson | Freelance Developer For  NYC'
+    %description
       = content_for?(:description) ? "#{content_for(:description)}" : 'Front-End and Full-Stack Web Developer. Expert in Ruby on Rails, React, Wordpress, HTML and CSS.'
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
@@ -25,7 +26,7 @@
     =render partial: "projects/partials/header"
     = yield
     =render partial: "projects/partials/footer"
-
+= favicon_link_tag '/assets/images/favicon.ico'
 :javascript
   !function () {
      var href = location.href;
