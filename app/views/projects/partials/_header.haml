@@ -2,10 +2,11 @@
   .contact
     <a href="#bottom">Contact</a>
   .container#header-container
-    .title
-      .name Hi, I'm Michael.
-      .description!= "<span class='parens'>(</span> Freelance web and full-stack developer <span class='parens'>)</span>"
-      %hr
+    -if request.original_fullpath == '/'
+      .title
+        .name Hi, I'm Michael.
+        .description!= "<span class='parens'>(</span> Freelance web and full-stack developer <span class='parens'>)</span>"
+        %hr
     %ul.menu
       %li
         %a{href: "/"} Home

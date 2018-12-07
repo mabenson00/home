@@ -6,4 +6,8 @@ class ProjectsController < ApplicationController
   def work
 
   end
+
+  def safari
+
+  end
 end

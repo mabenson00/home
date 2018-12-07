@@ -1,0 +1,27 @@
+- content_for :title do
+  How To Add a Browser Border Around Portfolio Images With CSS
+.project.row
+  .container
+    .line
+    %h1 Add a Browser Border Around Portfolio Images With CSS
+    %p When I was starting to make this site I started to realize that it was a pain in the ass to get portfolio images to look good. Mine all had the windows toolbar showing, a lot of open tabs, my ugly bookmarks bar, etc.
+    .image-container
+      = video_tag("work/experiences.mp4", :controls => false, :autobuffer => true, :autoplay => false, :loop => true, :muted => true)
+    %p To get around these problems, here is a way to make any full-screen image capture look like it was from a (simplified) Safari window.
+    %p The first step, is to add a container around your images if you don't have one already.
+    .code
+      =javascript_include_tag 'https://gist.github.com/mabenson00/1f8ae105373558556108a1f08ca6d381.js'
+    %p Next you use the CSS before method to always display a certain design right above every image. We want to have it look like a browser, so it's a grey box with the top corners rounded and three buttons (an image) in the top left.
+    .code
+      =javascript_include_tag 'https://gist.github.com/mabenson00/76d2e0b941264054cd5040dd72902336.js'
+    %p And that's about it! Here's my screenshot, and my screenshot with the CSS.
+    %h2 Before:
+    .image-container
+      =image_tag("work/safari.png")
+    %h2 After:
+    .image-container.safari
+      =image_tag("work/safari.png")
+    %p I also added a little bit of a border around the image to make it stand out from the background. Make sure to use the box-sizing: border-box on the image, or things won't align right.
+    %h2 Full CSS:
+    .code
+      =javascript_include_tag 'https://gist.github.com/mabenson00/3808740235dcb2ce31c2ad16fcb14b08.js'
