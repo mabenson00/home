@@ -4,4 +4,3 @@
 # User-agent: *
 # Disallow: /
 Sitemap: http://www.mbensonnyc.com/sitemap.xml.gz
-Sitemap: http://www.mbensonnyc.com/assets/sitemap.xml.gz
