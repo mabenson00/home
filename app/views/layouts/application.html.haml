@@ -9,7 +9,7 @@
 
     gtag('config', 'UA-130556389-1');
     </script>
-
+    = favicon_link_tag '/assets/images/favicon.ico'
     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
     %title
       = content_for?(:title) ? "#{content_for(:title)}" : 'Michael Benson | Freelance Developer For  NYC'
@@ -26,7 +26,7 @@
     =render partial: "projects/partials/header"
     = yield
     =render partial: "projects/partials/footer"
-= favicon_link_tag '/assets/images/favicon.ico'
+
 :javascript
   !function () {
      var href = location.href;
