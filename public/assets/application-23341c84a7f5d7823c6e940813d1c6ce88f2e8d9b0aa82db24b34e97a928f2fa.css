@@ -1,0 +1,454 @@
+/* line 1, C:/home/app/assets/stylesheets/base.sass */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 8, C:/home/app/assets/stylesheets/base.sass */
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #4c4f4d;
+  font-weight: 300;
+}
+/* line 12, C:/home/app/assets/stylesheets/base.sass */
+body a {
+  text-decoration: none;
+  color: #4c4f4d;
+}
+/* line 15, C:/home/app/assets/stylesheets/base.sass */
+body a.active {
+  color: #ff6c6c;
+}
+/* line 17, C:/home/app/assets/stylesheets/base.sass */
+body .pink {
+  color: #ff6c6c;
+}
+
+/* line 1, C:/home/app/assets/stylesheets/common.sass */
+body, html {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* line 8, C:/home/app/assets/stylesheets/common.sass */
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* line 13, C:/home/app/assets/stylesheets/common.sass */
+img {
+  max-width: 100%;
+}
+
+/* line 15, C:/home/app/assets/stylesheets/common.sass */
+video {
+  max-width: 100%;
+}
+
+/* line 17, C:/home/app/assets/stylesheets/common.sass */
+.container {
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 0 20%;
+}
+
+/* line 21, C:/home/app/assets/stylesheets/common.sass */
+.row {
+  max-width: 100%;
+}
+
+/* line 23, C:/home/app/assets/stylesheets/common.sass */
+.hoverbox {
+  box-sizing: border-box;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  max-width: 100%;
+  height: auto;
+  margin: 5px 5px;
+  font-family: "Lato", sans-serif;
+}
+
+/* line 32, C:/home/app/assets/stylesheets/common.sass */
+.hoverbox-layer-bottom {
+  display: block;
+}
+
+/* line 34, C:/home/app/assets/stylesheets/common.sass */
+.hoverbox-layer-top {
+  opacity: 0;
+  font-family: "Lato", sans-serif;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  padding: 15px;
+  -moz-transition: all 1.2s ease-in-out 0s;
+  -webkit-transition: all 1.2s ease-in-out 0s;
+  -ms-transition: all 1.2s ease-in-out 0s;
+  transition: all 1.2s ease-in-out 0s;
+}
+/* line 51, C:/home/app/assets/stylesheets/common.sass */
+.hoverbox-layer-top:hover, .hoverbox-layer-top .hoverbox-layer-top, .hoverbox-layer-top.active .hoverbox-layer-top {
+  opacity: 1;
+}
+
+/* line 53, C:/home/app/assets/stylesheets/common.sass */
+.hoverbox-text {
+  font-family: "Lato", sans-serif;
+  text-align: center;
+  font-size: 14px;
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -moz-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+/* line 1, C:/home/app/assets/stylesheets/header.sass */
+.header {
+  text-align: center;
+  background-color: #F7F7F7;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+/* line 6, C:/home/app/assets/stylesheets/header.sass */
+.header .contact {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  padding: 5px 10px;
+  background-color: #ff6c6c;
+  z-index: 1000;
+  font-size: 14px;
+  font-weight: 600;
+  transition: background-color 100ms linear;
+}
+@media (min-width: 768px) {
+  /* line 6, C:/home/app/assets/stylesheets/header.sass */
+  .header .contact {
+    font-size: 16px;
+  }
+}
+/* line 18, C:/home/app/assets/stylesheets/header.sass */
+.header .contact a {
+  text-decoration: underline;
+  color: #fff;
+}
+/* line 21, C:/home/app/assets/stylesheets/header.sass */
+.header .contact.scrolled {
+  background-color: #163953;
+}
+/* line 24, C:/home/app/assets/stylesheets/header.sass */
+.header .parens {
+  color: #ff6c6c;
+  font-size: 35px;
+  position: relative;
+  top: 4px;
+}
+/* line 29, C:/home/app/assets/stylesheets/header.sass */
+.header .container {
+  max-width: 500px;
+}
+/* line 31, C:/home/app/assets/stylesheets/header.sass */
+.header .name {
+  font-size: 27px;
+}
+/* line 33, C:/home/app/assets/stylesheets/header.sass */
+.header .description {
+  font-size: 19px;
+  margin-top: 10px;
+  padding-bottom: 35px;
+}
+/* line 37, C:/home/app/assets/stylesheets/header.sass */
+.header .menu {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  max-width: 300px;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+/* line 45, C:/home/app/assets/stylesheets/header.sass */
+.header .menu a {
+  font-weight: 400;
+}
+
+/* line 1, C:/home/app/assets/stylesheets/home.sass */
+.home {
+  background-color: #ff6c6c;
+  color: #fff;
+}
+/* line 4, C:/home/app/assets/stylesheets/home.sass */
+.home .container {
+  padding: 40px 20%;
+}
+/* line 6, C:/home/app/assets/stylesheets/home.sass */
+.home .logo {
+  position: relative;
+  width: 100px;
+  left: 0px;
+  top: 10px;
+}
+@media (min-width: 768px) {
+  /* line 6, C:/home/app/assets/stylesheets/home.sass */
+  .home .logo {
+    left: 50px;
+    top: 20px;
+  }
+}
+/* line 14, C:/home/app/assets/stylesheets/home.sass */
+.home .logo img {
+  width: 90px;
+}
+/* line 16, C:/home/app/assets/stylesheets/home.sass */
+.home .text {
+  max-width: 945px;
+  font-size: 24px;
+}
+@media (min-width: 768px) {
+  /* line 16, C:/home/app/assets/stylesheets/home.sass */
+  .home .text {
+    font-size: 30px;
+  }
+}
+/* line 21, C:/home/app/assets/stylesheets/home.sass */
+.home .specialties-container {
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  margin-bottom: 80px;
+}
+@media (min-width: 768px) {
+  /* line 21, C:/home/app/assets/stylesheets/home.sass */
+  .home .specialties-container {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 80px;
+  }
+}
+/* line 31, C:/home/app/assets/stylesheets/home.sass */
+.home .specialties-container .specialty {
+  padding: 20px 10px;
+  flex-grow: 1;
+}
+/* line 34, C:/home/app/assets/stylesheets/home.sass */
+.home .specialties-container .specialty .description {
+  font-size: 16px;
+}
+@media (min-width: 768px) {
+  /* line 31, C:/home/app/assets/stylesheets/home.sass */
+  .home .specialties-container .specialty {
+    flex-basis: 33%;
+  }
+}
+/* line 38, C:/home/app/assets/stylesheets/home.sass */
+.home .specialties-container .specialty .title {
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+/* line 1, C:/home/app/assets/stylesheets/small.sass */
+.small {
+  background-color: #163953;
+  color: #fff;
+}
+/* line 4, C:/home/app/assets/stylesheets/small.sass */
+.small .container {
+  padding: 40px 20% 120px 20%;
+}
+/* line 6, C:/home/app/assets/stylesheets/small.sass */
+.small .logo {
+  position: relative;
+  width: 900px;
+  left: 75%;
+  top: 10px;
+}
+@media (min-width: 768px) {
+  /* line 6, C:/home/app/assets/stylesheets/small.sass */
+  .small .logo {
+    left: 90%;
+    top: 20px;
+  }
+}
+/* line 14, C:/home/app/assets/stylesheets/small.sass */
+.small .logo img {
+  width: 90px;
+}
+/* line 16, C:/home/app/assets/stylesheets/small.sass */
+.small .small-header {
+  font-size: 30px;
+  margin-bottom: 40px;
+}
+/* line 19, C:/home/app/assets/stylesheets/small.sass */
+.small .small-header a {
+  text-decoration: underline;
+  color: #fff;
+}
+/* line 22, C:/home/app/assets/stylesheets/small.sass */
+.small .text {
+  max-width: 945px;
+  font-size: 18px;
+}
+@media (min-width: 768px) {
+  /* line 22, C:/home/app/assets/stylesheets/small.sass */
+  .small .text {
+    font-size: 18px;
+  }
+}
+/* line 27, C:/home/app/assets/stylesheets/small.sass */
+.small .text .legal {
+  font-size: 14px;
+  margin-top: 60px;
+}
+
+/* line 1, C:/home/app/assets/stylesheets/footer.sass */
+.footer {
+  text-align: center;
+  background-color: #F7F7F7;
+  padding-top: 140px;
+  padding-bottom: 280px;
+}
+/* line 6, C:/home/app/assets/stylesheets/footer.sass */
+.footer a {
+  text-decoration: underline;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  color: #ff6c6c;
+}
+@media (min-width: 768px) {
+  /* line 6, C:/home/app/assets/stylesheets/footer.sass */
+  .footer a {
+    color: #4c4f4d;
+  }
+}
+/* line 14, C:/home/app/assets/stylesheets/footer.sass */
+.footer .parens {
+  color: #ff6c6c;
+  font-size: 45px;
+  position: relative;
+  top: 4px;
+  display: none;
+}
+@media (min-width: 768px) {
+  /* line 14, C:/home/app/assets/stylesheets/footer.sass */
+  .footer .parens {
+    display: inline;
+  }
+}
+/* line 22, C:/home/app/assets/stylesheets/footer.sass */
+.footer .container {
+  max-width: 500px;
+}
+/* line 24, C:/home/app/assets/stylesheets/footer.sass */
+.footer .name {
+  font-size: 35px;
+  font-weight: 600;
+}
+/* line 27, C:/home/app/assets/stylesheets/footer.sass */
+.footer .description {
+  font-size: 24px;
+  margin-top: 10px;
+  padding-bottom: 35px;
+}
+
+/* line 1, C:/home/app/assets/stylesheets/work.sass */
+.work {
+  background-color: #F7F7F7;
+  color: #4c4f4d;
+}
+/* line 4, C:/home/app/assets/stylesheets/work.sass */
+.work .container {
+  padding: 0px 20%;
+}
+/* line 6, C:/home/app/assets/stylesheets/work.sass */
+.work .container .site {
+  display: none;
+}
+@media (min-width: 768px) {
+  /* line 6, C:/home/app/assets/stylesheets/work.sass */
+  .work .container .site {
+    display: block;
+  }
+}
+/* line 10, C:/home/app/assets/stylesheets/work.sass */
+.work .container .site img, .work .container .site video {
+  border: 1px solid #E3E2E2;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2);
+}
+/* line 13, C:/home/app/assets/stylesheets/work.sass */
+.work .container .site .site-header {
+  font-size: 48px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  text-align: center;
+}
+/* line 18, C:/home/app/assets/stylesheets/work.sass */
+.work .container .site .site-text {
+  font-size: 24px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+/* line 22, C:/home/app/assets/stylesheets/work.sass */
+.work .container .site .item {
+  padding: 100px 0px;
+}
+/* line 24, C:/home/app/assets/stylesheets/work.sass */
+.work .container .site .item .item-class {
+  position: relative;
+  left: -200px;
+  top: 225px;
+}
+/* line 28, C:/home/app/assets/stylesheets/work.sass */
+.work .container .site .item .item-class .title {
+  padding-bottom: 10px;
+  font-size: 18px;
+  max-width: 160px;
+}
+/* line 32, C:/home/app/assets/stylesheets/work.sass */
+.work .container .site .item .item-class .title.full {
+  text-align: center;
+}
+/* line 34, C:/home/app/assets/stylesheets/work.sass */
+.work .container .site .item .item-class .title.back {
+  text-align: right;
+}
+/* line 36, C:/home/app/assets/stylesheets/work.sass */
+.work .container .site .item .item-class .box {
+  display: inline-block;
+  margin-right: 4px;
+  border: 1px solid #ff6c6c;
+  width: 75px;
+  height: 15px;
+  box-sizing: border-box;
+}
+/* line 43, C:/home/app/assets/stylesheets/work.sass */
+.work .container .site .item .item-class .box.active {
+  background-color: #ff6c6c;
+  border: 1px solid #ff6c6c;
+  width: 75px;
+  height: 17px;
+  margin-bottom: -1px;
+}
+/* line 49, C:/home/app/assets/stylesheets/work.sass */
+.work .container .site .screen {
+  max-height: 500px;
+  overflow: hidden;
+}
