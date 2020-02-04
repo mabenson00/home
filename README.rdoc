@@ -1,28 +1,8 @@
-== README
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+If i'm typing a sentence and want to emphasize a word or be like I don't understand what `GUI` is I do this.
 
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+If I'm talking to you and want to paste a long quote or some code or something I do this
+
+``
+In 2005, when the store moved from its original location on West 56th Street, where it opened in 1979 — on a Friday the 13th, no less — to its current home on Warren Street, near the Sept. 11 museum and memorial, hordes of loyal customers followed. “Detective stories are essentially fairy tales,” Mr. Penzler said of the genre’s staying power. “They’re the battle between good and evil.”
+``
